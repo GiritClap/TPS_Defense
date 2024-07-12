@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerAiming : MonoBehaviour
 {
     public float turnSpeed = 15.0f;
+
+    RaycastWeapon weapon;
+
     Camera mainCamera;
     public CinemachineCameraOffset camOffset;
     Vector3 originalCamOffset;
@@ -15,6 +18,7 @@ public class PlayerAiming : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         originalCamOffset = camOffset.m_Offset;
+        weapon = GetComponentInChildren<RaycastWeapon>();
     }
 
     private void Update()
@@ -28,6 +32,14 @@ public class PlayerAiming : MonoBehaviour
             camOffset.m_Offset = originalCamOffset;
         }
 
+        if(Input.GetMouseButtonDown(0))
+        {
+            weapon.StartFire();
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            weapon.StopFire();
+        }
 
     }
     // Update is called once per frame
