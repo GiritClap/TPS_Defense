@@ -302,6 +302,7 @@ MonoBehaviour:
   hitEffect: {fileID: 1147253857572753221}
   raycastOrigin: {fileID: 2082445967}
   raycastDestination: {fileID: 1609213025}
+  tracerEffect: {fileID: 8894920860673957226, guid: d234f785021ff4645b32044b6046bbee, type: 3}
 --- !u!1 &236402843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,7 +1187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720748780}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.015689882, y: 0.000000017237827, z: 2.7049277e-10, w: 0.9998769}
+  m_LocalRotation: {x: -0.015689882, y: -0.000000017237834, z: -2.7049288e-10, w: 0.9998769}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1541,8 +1542,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.015689885, y: 0.00000003447566, z: 5.4098576e-10, w: 0.9998769}
-  m_LocalPosition: {x: 18.258844, y: 13.048842, z: -19.302807}
+  m_LocalRotation: {x: -0.015689885, y: -0.00000003447566, z: -5.4098576e-10, w: 0.9998769}
+  m_LocalPosition: {x: 18.258842, y: 13.048842, z: -19.302807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
